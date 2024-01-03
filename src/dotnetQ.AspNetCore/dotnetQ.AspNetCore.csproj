@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	    
+	<ItemGroup>
+		<ProjectReference Include="..\..\dotnetQ.Scheduler.Hangfire\dotnetQ.Scheduler.Hangfire.csproj" />
+		<ProjectReference Include="..\dotnetQ.Core\dotnetQ.Abstractions.csproj" />
+		<ProjectReference Include="..\dotnetQ.Scheduler.ServiceWorker\dotnetQ.Scheduler.ServiceWorker.csproj" />
+		<ProjectReference Include="..\dotnetQ.Storage.EntityFrameworkCore\dotnetQ.Storage.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+	</ItemGroup>
+		    
+  <ItemGroup>
+    <ProjectReference Include="..\dotnetQ\dotnetQ.csproj" />
+  </ItemGroup>
+
+</Project>

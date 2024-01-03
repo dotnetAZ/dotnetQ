@@ -1,4 +1,4 @@
-﻿namespace dotnetQ.Core.Entities
+﻿namespace dotnetQ.Abstractions.Models
 {
     public class ItemType
     {

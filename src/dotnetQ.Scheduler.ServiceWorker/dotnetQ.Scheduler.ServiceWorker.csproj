@@ -11,7 +11,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dotnetQ.Core\dotnetQ.Core.csproj" />
+    <ProjectReference Include="..\dotnetQ.Core\dotnetQ.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

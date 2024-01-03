@@ -1,5 +1,5 @@
-﻿using dotnetQ.Core.Entities;
-using dotnetQ.Core.Services;
+﻿using dotnetQ.Abstractions.Models;
+using dotnetQ.Abstractions.Services;
 
 namespace dotnetQ
 {

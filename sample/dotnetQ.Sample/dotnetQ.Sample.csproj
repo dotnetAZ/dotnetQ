@@ -12,8 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\dotnetQ.Core\dotnetQ.Core.csproj" />
-    <ProjectReference Include="..\..\src\dotnetQ\dotnetQ.csproj" />
+    <ProjectReference Include="..\..\src\dotnetQ.AspNetCore\dotnetQ.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>

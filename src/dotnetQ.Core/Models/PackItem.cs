@@ -1,4 +1,4 @@
-﻿namespace dotnetQ.Core.Entities
+﻿namespace dotnetQ.Abstractions.Models
 {
     public class PackItem
     {
@@ -16,4 +16,5 @@
 
         public Pack Pack { get; set; }
     }
+
 }

@@ -1,13 +1,17 @@
 ﻿using Microsoft.Extensions.Hosting;
 
-namespace dotnetQ.Core.Scheduler
+namespace dotnetQ.Scheduler.ServiceWorker
 {
-    public class IQRequeueWorker : BackgroundService
+    public class QRequeueWorker : BackgroundService
     {
-
-        protected override Task ExecuteAsync(CancellationToken stoppingToken)
+        public QRequeueWorker()
         {
-            throw new NotImplementedException();
+            
+        }
+
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+        {
+
         }
     }
 }

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using dotnetQ.Core.Entities;
+﻿using dotnetQ.Abstractions.Models;
 
-namespace dotnetQ.Core.Services
+namespace dotnetQ.Abstractions.Services
 {
     public interface IQManager
     {

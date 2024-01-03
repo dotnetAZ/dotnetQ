@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
 
-namespace dotnetQ.Core.Scheduler
+namespace dotnetQ.Scheduler.ServiceWorker
 {
     public class QProcessWorker : BackgroundService
     {

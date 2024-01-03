@@ -1,11 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace dotnetQ.Core.Scheduler
+namespace dotnetQ.Scheduler.ServiceWorker
 {
     public class QPackGenerateWorker : BackgroundService
     {
