@@ -1,0 +1,6 @@
+@dotnetQ.Sample_HostAddress = http://localhost:5110
+
+GET {{dotnetQ.Sample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
