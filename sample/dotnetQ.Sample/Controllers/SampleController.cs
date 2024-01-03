@@ -41,7 +41,7 @@ namespace dotnetQ.Sample.Controllers
             iqManager.AddItem(new Item()
             {
 
-            });
+            }, default);
 
             return Ok();
         }

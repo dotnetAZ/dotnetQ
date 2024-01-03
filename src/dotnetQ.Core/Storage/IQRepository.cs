@@ -21,8 +21,9 @@ namespace dotnetQ.Abstractions.Storage
 
 
         #region Q-Items
-        Task<Item> AddItem(Item item, CancellationToken cancellationToken);
         Task<Item> GetItem(int itemId, CancellationToken cancellationToken);
+        Task<Item> AddItem(Item item, CancellationToken cancellationToken);
+        Task<Item> RemoveItem(int itemId, CancellationToken cancellationToken);
         #endregion
 
         #region Q-Packs

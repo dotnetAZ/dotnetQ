@@ -8,7 +8,6 @@
 
 	    
 	<ItemGroup>
-		<ProjectReference Include="..\..\dotnetQ.Scheduler.Hangfire\dotnetQ.Scheduler.Hangfire.csproj" />
 		<ProjectReference Include="..\dotnetQ.Core\dotnetQ.Abstractions.csproj" />
 		<ProjectReference Include="..\dotnetQ.Scheduler.ServiceWorker\dotnetQ.Scheduler.ServiceWorker.csproj" />
 		<ProjectReference Include="..\dotnetQ.Storage.EntityFrameworkCore\dotnetQ.Storage.EntityFrameworkCore.csproj" />

@@ -4,8 +4,8 @@ namespace dotnetQ.Abstractions.Services
 {
     public interface IQManager
     {
-        public void AddItem(Item item);
-        public void RemoveItem();
+        public Task<Item> AddItem(Item item, CancellationToken cancellationToken);
+        public Task<Item> RemoveItem(int itemId, CancellationToken cancellationToken);
 
     }
 }

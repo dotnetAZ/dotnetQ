@@ -1,18 +1,27 @@
 ﻿using dotnetQ.Abstractions.Models;
 using dotnetQ.Abstractions.Services;
+using dotnetQ.Abstractions.Storage;
+using System.Threading;
 
 namespace dotnetQ
 {
     public class QManager : IQManager
     {
-        public void AddItem(Item item)
+        private readonly IQRepository _qRepository;
+
+        public QManager(IQRepository qRepository)
         {
-            throw new NotImplementedException();
+            this._qRepository = qRepository;
         }
 
-        public void RemoveItem()
+        public async Task<Item> AddItem(Item item, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await _qRepository.AddItem(item, cancellationToken);
+        }
+
+        public async Task<Item> RemoveItem(int itemId, CancellationToken cancellationToken)
+        {
+            return await _qRepository.RemoveItem(itemId, cancellationToken);
         }
     }
 }
