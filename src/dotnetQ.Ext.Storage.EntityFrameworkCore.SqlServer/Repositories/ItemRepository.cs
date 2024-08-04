@@ -1,7 +1,6 @@
-﻿using dotnetQ.Abstractions.Storage;
-using dotnetQ.Storage.EntityFrameworkCore.SqlServer.DbCtxs;
+﻿using dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.DbCtxs;
 
-namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Repositories;
+namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.Repositories;
 
 public class ItemRepository : IItemRepository
 {

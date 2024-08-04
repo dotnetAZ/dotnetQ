@@ -1,8 +1,7 @@
-﻿using dotnetQ.Abstractions.Entities.QItems;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.EntitiesConfigs;
+namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.EntitiesConfigs;
 
 internal class ItemTypeEntityConfigs : IEntityTypeConfiguration<ItemType>
 {

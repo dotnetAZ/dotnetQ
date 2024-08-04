@@ -1,10 +1,9 @@
-﻿using dotnetQ.Abstractions.Storage;
-using dotnetQ.Storage.EntityFrameworkCore.SqlServer.DbCtxs;
-using dotnetQ.Storage.EntityFrameworkCore.SqlServer.Repositories;
+﻿using dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.DbCtxs;
+using dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer._IocConfig
+namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer._IocConfig
 {
     public static class ServiceCollectionExtensions
     {

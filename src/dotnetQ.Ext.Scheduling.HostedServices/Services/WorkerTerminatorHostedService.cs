@@ -1,9 +1,7 @@
-﻿using dotnetQ.Abstractions.Configurations;
-using dotnetQ.Abstractions.Storage;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace dotnetQ.Scheduling.HostedServices.Services;
+namespace dotnetQ.Ext.Scheduling.HostedServices.Services;
 
 public class WorkerTerminatorHostedService : BackgroundService
 {

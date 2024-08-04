@@ -4,6 +4,10 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Distributed-Queue</Title>
+		<Description>A Free and Open-Source Distributed-Queue for .NET Solutions</Description>
+		<PackageProjectUrl>https://github.com/dotnetAZ/dotnetQ</PackageProjectUrl>
 	</PropertyGroup>
 
 	<ItemGroup>

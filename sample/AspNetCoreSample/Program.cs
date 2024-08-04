@@ -1,6 +1,5 @@
 using dotnetQ.Abstractions.Configurations;
-using dotnetQ.Scheduling.HostedServices._IocConfig;
-using dotnetQ.Storage.EntityFrameworkCore.SqlServer._IocConfig;
+using dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer._IocConfig;
 
 var builder = WebApplication.CreateBuilder(args);
 

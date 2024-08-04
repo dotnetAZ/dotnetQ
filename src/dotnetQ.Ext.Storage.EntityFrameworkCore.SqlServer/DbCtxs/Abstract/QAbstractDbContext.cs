@@ -1,9 +1,6 @@
-﻿using dotnetQ.Abstractions.Entities.QItems;
-using dotnetQ.Abstractions.Entities.QPacks;
-using dotnetQ.Abstractions.Entities.QWorkers;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.DbCtxs.Abstract
+namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.DbCtxs.Abstract
 {
     public class QAbstractDbContext : DbContext
     {
