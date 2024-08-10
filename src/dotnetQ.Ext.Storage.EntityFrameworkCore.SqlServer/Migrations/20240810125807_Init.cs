@@ -3,20 +3,20 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Migrations
+namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.EnsureSchema(
-                name: "Q");
+                name: "QQ");
 
             migrationBuilder.CreateTable(
                 name: "Items",
-                schema: "Q",
+                schema: "QQ",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -39,7 +39,7 @@ namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Migrations
 
             migrationBuilder.CreateTable(
                 name: "ItemTypes",
-                schema: "Q",
+                schema: "QQ",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -60,7 +60,7 @@ namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Migrations
 
             migrationBuilder.CreateTable(
                 name: "PackItems",
-                schema: "Q",
+                schema: "QQ",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -82,7 +82,7 @@ namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Packs",
-                schema: "Q",
+                schema: "QQ",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -103,7 +103,7 @@ namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Workers",
-                schema: "Q",
+                schema: "QQ",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -129,23 +129,23 @@ namespace dotnetQ.Storage.EntityFrameworkCore.SqlServer.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Items",
-                schema: "Q");
+                schema: "QQ");
 
             migrationBuilder.DropTable(
                 name: "ItemTypes",
-                schema: "Q");
+                schema: "QQ");
 
             migrationBuilder.DropTable(
                 name: "PackItems",
-                schema: "Q");
+                schema: "QQ");
 
             migrationBuilder.DropTable(
                 name: "Packs",
-                schema: "Q");
+                schema: "QQ");
 
             migrationBuilder.DropTable(
                 name: "Workers",
-                schema: "Q");
+                schema: "QQ");
         }
     }
 }

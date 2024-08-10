@@ -1,27 +1,12 @@
 ﻿using dotnetQ.Ext.Scheduling.HostedServices.Services;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace dotnetQ.Ext.Scheduling.HostedServices._IocConfig
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddDotnetQ(this IServiceCollection services,
-            IHostEnvironment hostEnvironment,
-            QConfigurations qConfigurations)
+        public static void AddDotnetQHostedServices(this IServiceCollection services)
         {
-            var qHostInfo = new QHostInfo()
-            {
-                MachineName = Environment.MachineName,
-                ProcessId = Environment.ProcessId,
-                EnvironmentName = hostEnvironment.EnvironmentName,
-                ServerSessionId = Guid.NewGuid()
-            };
-            services.AddSingleton(qHostInfo);
-            services.AddSingleton(qConfigurations);
-
-            // -----------
-
             services.AddHostedService<WorkerRegistrationHostedService>();
             services.AddHostedService<WorkerHeartBeatHostedService>();
             services.AddHostedService<WorkerTerminatorHostedService>();

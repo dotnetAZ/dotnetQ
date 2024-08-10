@@ -1,26 +1,27 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using dotnetQ.Abstractions.Entities.QItems;
+using dotnetQ.Abstractions.Entities.QPacks;
+using dotnetQ.Abstractions.Entities.QWorkers;
+using Microsoft.EntityFrameworkCore;
 
 namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.DbCtxs.Abstract
 {
     public class QAbstractDbContext : DbContext
     {
+
         #region Ctors
         public QAbstractDbContext(DbContextOptions<QAbstractDbContext> options) : base(options)
         {
-
         }
 
         public QAbstractDbContext(DbContextOptions options) : base(options)
         {
-
         }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.HasDefaultSchema("Q");
-            //modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
         }
 
         #region DbSets

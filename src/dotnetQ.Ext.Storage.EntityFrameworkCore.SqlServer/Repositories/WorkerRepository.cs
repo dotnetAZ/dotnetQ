@@ -1,4 +1,6 @@
-﻿using dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.DbCtxs;
+﻿using dotnetQ.Abstractions.Entities.QWorkers;
+using dotnetQ.Abstractions.Storage;
+using dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.DbCtxs;
 using Microsoft.EntityFrameworkCore;
 
 namespace dotnetQ.Ext.Storage.EntityFrameworkCore.SqlServer.Repositories
